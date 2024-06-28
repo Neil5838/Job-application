@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Layout */
+
+body {
+    font-size: 16px;
+    background-color: #dddddd;
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 675px;
+    margin: 2em auto;
+    background-color: #fff;
+
+    border-radius: 4px;
+
+    /* border: 1px solid magenta; */
+}
+
+.titles {
+    padding: 3em;
+    background-color: rgba(0, 0, 0, 0.062);
+}
+
+.form-details {
+    padding: 0 3em 3em 3em;
+
+}
+
+.rows {
+    margin: 2em 0;
+}
+
+/* Typography */
+
+.titles h1, p {
+    margin: 0;
+}
+
+.titles h1 {
+    margin-bottom: .20em;
+    color: darkgoldenrod;
+    font-size: 2.125rem;
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+.form-title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.125rem;
+    
+}
+
+.rows span {
+    font-size: 0.85rem;
+    
+}
+
+.row1, .row2,.row3, .row4,
+.row5, .row6, .row7, .row8,
+.row9, .row10, .row11 {
+    margin: 1.5em 0;
+}
+
+.inputs, .row3, .row5, .row6, .row7, .row8, .row9, .row10, .row11-inputs{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    
+}
+
+.inputs, .row11-inputs {
+    margin-top: .5em;
+}
+
+.row1-inputs .left, .row11-inputs .left{
+    width: 50%;
+}
+
+.row1-inputs .right, .row11-inputs .right{
+    width: 50%;
+}
+
+.inputs input[type='text'] {
+    width: 100%;
+    padding: .5em .65em;
+}
+
+.inputs span {
+    display: block;
+}
+
+.row2-inputs .left {
+    width: 33%;
+}
+
+.row2-inputs .middle {
+    width: 33%;
+}
+
+.row2-inputs .right {
+    width: 33%;
+}
+
+.row2-inputs select {
+    width: 100%;
+    padding: .5em .65em;
+
+}
+
+.row3 label, .row5 label {
+    display: block;
+    width: 15%;
+}
+
+.row3 select, .row5 input[type='text'] {
+    width: 85%;
+    padding: .5em .65em;
+
+}
+
+.checkboxes-columns {
+    margin-top: .5em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1 label, .col-2 label, .col-3 label, .col-4 label {
+    display: inline-block;
+    margin-bottom: .5em;
+} 
+
+
+.url-inputs span {
+    display: block;
+}
+
+.row6  label{
+    width: 25%;
+}
+
+.row6 .url-inputs {
+    width: 85%;
+}
+
+.url-inputs input[type='url'] {
+    width: 100%;
+    padding: .5em .65em;
+
+}
+
+
+.row7 {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row7 label {
+    width: 50%;
+}
+
+.row7 .flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    
+}
+
+.row8 label {
+    width: 50%;
+}
+
+.row8 input {
+    width: 50%;
+    padding: .5em .65em;
+
+}
+
+.row9 label {
+    width: 12%;
+}
+
+.row9 div {
+    width: 88%;
+}
+
+.row9 input {
+    width: 100%;
+    padding: .5em .65em;
+
+}
+
+.row10 label {
+    width: 12%;
+}
+
+.row10 input[type='email'] {
+    width: 88%;
+    padding: .5em .65em;
+}
+
+.row11-inputs span {
+    display: block;
+}
+
+.row11-inputs .left input[type='text'],
+.row11-inputs .right input[type='text']{
+    width: 100%;
+    padding: .5em .65em;
+
+}
+
+
+/* buttons */
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.buttons button {
+    width: 50%;
+    display: block;
+
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.80rem;
+    padding: 0.85em;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.buttons #submit {
+    background-color: darkgoldenrod;
+}
+
+.buttons #reset {
+    background-color: #232323;
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+}
+
+
+@media (max-width: 675px) {
+    .container {
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .titles {
+        padding: 2em;
+    }
+
+    .form-details {
+        padding: 0 2em 2em 2em;
+    }
+
+    .inputs, .row3, .row5, .row6, .row7, .row8, .row9, .row10, .row11-inputs{
+        flex-direction: column;
+        gap: 1em;
+        
+    }
+
+   
+    .row1-inputs .left, .row11-inputs .left{
+        width: 100%;
+    }
+    
+    .row1-inputs .right, .row11-inputs .right{
+        width: 100%;
+    }
+
+    .row2-inputs .left {
+        width: 100%;
+    }
+    
+    .row2-inputs .middle {
+        width: 100%;
+    }
+    
+    .row2-inputs .right {
+        width: 100%;
+    }
+
+    .checkboxes-columns {
+        flex-direction: column;
+    }
+    
+    .row3 label, .row3 select{
+        width: 100%;
+    }
+    
+    .row3 label {
+        margin-bottom: -.4em;
+    }
+
+    .row3 select {
+        margin-top: 0;
+    }
+
+    .row5 label, .row5 input[type='text'] {
+        width: 100%;
+    }
+
+    .row5 label, .row6 label, .row8 label, .row9 label, .row10 label {
+        margin-bottom: -.4em;
+    }
+    
+    .row6 label, .row6 .url-inputs{
+        width: 100%;
+    }
+
+    .row7 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .row7 label {
+        width: 60%;
+    }
+
+    .row7 .flex {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        
+    }
+
+    .row8 label, .row8 input {
+        width: 100%;
+    }
+    
+    .row9 label, .row9 div {
+        width: 100%;
+    }
+
+    .row10 label, .row10 input[type='email'] {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 350px) {
+    
+    .titles {
+        padding: 1.5em;
+    }
+
+    .form-details {
+        padding: 0 1.5em 1.5em 1.5em;
+    }
+}
